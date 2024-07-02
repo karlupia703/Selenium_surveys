@@ -1,23 +1,37 @@
 package coding;
 
 import java.util.*;
-public class methodToJava {	
- public static void printnumber(int n) {
-	 if (n==0) {
-		 return;
-	 }
-	// printnumber(n-1);
-	 System.out.println(n);
-	 printnumber(n-1);
- }
+//public class methodToJava {	
+//	static void myMethod() {
+//		System.out.println("Hello world!");
+//	}
+//public static void main(String[] args) {
+//myMethod();
+//	
+// }	
+//}
+
+
+public class  methodToJava{
+	//static method
+	static void Method() {
+		System.out.println("Hello how are you?");
+	}
+	
+	public void Method1() {
+	System.out.println("public method must be called by creating objects");
+	}
+	
+	public static void main(String[] args){
+//		Method(); // Call the static method
+		//Method1();
 		
- public static void main(String[] args) {
-	 int n =6;
-	 printnumber(n);	 
- }	
+		methodToJava myobj = new methodToJava();
+		myobj.Method();
+		
+		}
+
 }
-
-
 
 
 
