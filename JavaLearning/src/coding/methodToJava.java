@@ -12,7 +12,7 @@ public class methodToJava {
  }
 		
  public static void main(String[] args) {
-	 int n =5;
+	 int n =6;
 	 printnumber(n);	 
  }	
 }
