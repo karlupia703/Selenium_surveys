@@ -1,0 +1,79 @@
+package base;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+public class New {
+
+	public static void main(String[] args)  throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		ChromeOptions Options = new ChromeOptions();
+        Options.addArguments("--enable-notifications");
+        Thread.sleep(1000);
+		
+		ChromeDriver driver = new ChromeDriver();
+		 Actions actions = new Actions(driver);
+		
+		// To maximize the window
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		// go to website
+		driver.get("https://survey-building-app-develop-iymj66chvq-uc.a.run.app/questions");
+		Thread.sleep(3000);
+		
+		//click on email field
+	    driver.findElement(By.xpath("/html/body/div/div/button/div/h6")).click();
+	    Thread.sleep(1000);
+
+	    Set <String> windows = driver.getWindowHandles();
+	    Iterator <String> it = windows.iterator();
+	    String p = it.next();
+	    String c = it.next();
+	    driver.switchTo().window(c);
+	    Thread.sleep(3000);
+	    
+	    
+	        
+	   //chrome pop xpath
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("rajni.1156@zenmonk.tech");
+	    driver.findElement(By.xpath("//span[text()='Next']")).click();
+	    Thread.sleep(3000);
+	    
+	     //enter password
+	     driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Rajnikar@1234");
+	     Thread.sleep(3000);
+	     
+		 //Click on next button
+	     driver.findElement(By.xpath("//span[text()='Next']")).click();
+	     Thread.sleep(3000);
+		
+	     //redirect to parent window
+	     driver.switchTo().window(p);
+	     Thread.sleep(2000);
+
+	     // click on create button -Survey
+	    driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
+		 Thread.sleep(3000);
+		
+		 // enter survey
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input")).sendKeys("First survey 1");
+		 Thread.sleep(3000);
+		 
+		 //select
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[2]/div/div/input")).sendKeys("FS1");
+		 Thread.sleep(3000);
+		 
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[3]/div/div/div")).click();
+		 Thread.sleep(2000);
+		 
+	}
+
+}

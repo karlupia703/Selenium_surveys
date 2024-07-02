@@ -1,0 +1,37 @@
+package base;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class New {
+
+	public static void main(String[] args)  throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		ChromeOptions Options = new ChromeOptions();
+        Options.addArguments("--enable-notifications");
+        Thread.sleep(1000);
+		
+		ChromeDriver driver = new ChromeDriver();
+		
+		// To maximize the window
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		// go to website
+		driver.get("https://survey-building-app-develop-iymj66chvq-uc.a.run.app/surveys");
+
+		//click on Survey tab
+	    driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[1]/div/div[2]/span")).click();
+	    Thread.sleep(1000);
+	    
+	    //click on create button
+	    driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
+	    Thread.sleep(1000);
+		
+		
+		
+	}
+
+}

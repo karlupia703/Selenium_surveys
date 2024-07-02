@@ -1,0 +1,78 @@
+package coding;
+
+
+
+   // non parameters pass in constructor
+//public class ClassandObject {
+//	String color;
+//	String type;
+//	
+//	public void write() {
+//	System.out.println("Writing something");
+//	}
+//
+//	//i want to print the color of pen
+//	public void Colorprint() {
+//		System.out.println(this.color);
+//	}
+//	
+//	public static void main(String[] args) {
+//		ClassandObject pen1 = new ClassandObject();
+//		pen1.color ="blue";
+//		pen1.type ="gel";
+//		
+//		pen1.write(); // call to print writing something
+//		
+//		ClassandObject pen2 = new ClassandObject();
+//		pen2.color = "black";
+//		pen2.type = "ballpoint";
+//		
+//		pen1.Colorprint(); //blue
+//	    pen2.Colorprint(); //black print hoga
+//	    
+	    
+	  // Constructor call with parameters	
+ public class ClassandObject {
+ String name;
+ int age;
+ String Class;
+ 
+   public void studentinfo() {
+	   System.out.println(this.name);
+	   System.out.println(this.age);
+	   System.out.println(this.Class);
+   }
+	 
+   ClassandObject(){
+	   this.name =name;
+	   this.age = age;
+	   this.Class = Class;
+	   
+   }
+     
+	 public static void main(String[] args) {
+		 ClassandObject S1 = new ClassandObject("Raman", 25, "MBA");
+		 S1.studentinfo();
+		 		 
+ }
+ }
+	
+	
+ 
+ 
+ 
+ 
+ 
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+

@@ -1,0 +1,56 @@
+package base;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+public class New {
+
+	public static void main(String[] args)  throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		ChromeOptions Options = new ChromeOptions();
+        Options.addArguments("--enable-notifications");
+        Thread.sleep(1000);
+		
+		ChromeDriver driver = new ChromeDriver();
+		 Actions actions = new Actions(driver);
+		
+		// To maximize the window
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		// go to website
+		driver.get("https://survey-building-app-develop-iymj66chvq-uc.a.run.app/questions");
+		
+		//click on email field
+	    driver.findElement(By.xpath("/html/body/div/div/button/div/h6")).click();
+	    Thread.sleep(2000);
+
+	   //chrome pop xpath
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("roohjeani@gmail.com");
+		Thread.sleep(1000);
+	    
+	    //Click on next button
+	    driver.findElement(By.xpath("//spam[text()='NEXT']")).click();
+	    Thread.sleep(1000);
+	    
+	  
+	    //enter password
+	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Rajnikar@1234");
+		Thread.sleep(1000);
+	    
+		 //Click on next button
+	     driver.findElement(By.xpath("//spam[text()='NEXT']")).click();
+	     Thread.sleep(1000);
+		
+		
+	    
+	
+		
+		
+	}
+
+}

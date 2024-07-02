@@ -1,0 +1,34 @@
+package coding;
+
+public class ClassandObject {
+	String color;
+	String type;
+	
+	public void write() {
+	System.out.println("Writing something");
+	}
+
+	//i want to print the color of pen
+	public void Colorprint() {
+		System.out.println(this.color);
+	}
+	public static void main(String[] args) {
+		ClassandObject pen1 = new ClassandObject();
+		pen1.color ="blue";
+		pen1.type ="gel";
+		
+//		pen1.write();
+		
+		ClassandObject pen2 = new ClassandObject();
+		pen2.color = "black";
+		pen2.type = "ballpeint";
+		
+		pen1.Colorprint(); //blue
+	    pen2.Colorprint(); //black print hoga
+	    
+	    
+	   
+		
+	}
+
+}
