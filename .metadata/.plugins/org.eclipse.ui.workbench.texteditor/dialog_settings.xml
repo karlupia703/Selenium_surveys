@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="executeScript"/>
+		<item key="selection" value="ReturntoHomePage"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="returntoHomepage"/>
+			<item value="returnonHomepage"/>
+			<item value="return"/>
 			<item value="executeScript"/>
 			<item value="/html/body/div[2]/div/ul/li[1]/ul/li[1]"/>
 			<item value="/html/body/div/div[1]/div/div[2]/div/section/div[2]/form/div[7]/div/div/div"/>
@@ -20,9 +23,6 @@
 			<item value="html/body/div/div[1]/div/div[1]/aside/div/a[5]"/>
 			<item value="_card_Login_Shadow cursor"/>
 			<item value="import org.openqa.selenium.support.ui.WebDriverWait;&#x0A;"/>
-			<item value="webdriverwait"/>
-			<item value="/html/body/div/div[2]/div[1]/div/form[2]/div/div[1]/div/div[1]/div"/>
-			<item value="/div/div[1]/div/div[1]/div/div/span"/>
 		</list>
 		<list key="replacehistory">
 		</list>

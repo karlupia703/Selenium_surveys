@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngpackage.dummylogin">
+      <class name="Testcases.Survey_testcase">
         <methods>
-          <include name="team"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testValidLogin"/>
+          <include name="CreateSurvey"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- testngpackage.dummylogin -->
+      </class> <!-- Testcases.Survey_testcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

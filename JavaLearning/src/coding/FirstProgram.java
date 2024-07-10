@@ -2,7 +2,7 @@ package coding;
 
 import java.util.Scanner;
 
-public class FirstProgram {
+ class FirstProgram {
 //	static void myMethod() {
 //		System.out.println("hello");
 //	}
@@ -13,16 +13,17 @@ public class FirstProgram {
 	
 // method print from different way
 	
-	public static void printMyName(String name) {
-	System.out.println(name);	
+	public static void main(String[] args){
+		Scanner myobj = new Scanner(System.in);
+		String userName;
+	
+		//enter username and press enter
+		System.out.println("Enter usernamee");
+		userName = myobj.nextLine();
 		
+		System.out.println("Username is:" + userName);
 	}
-    public static void main(String args[]) {
-    	Scanner sc = new Scanner(System.in);
-    	String name = sc.next();
-    	
-    	printMyName(name);
-    	
+      	
     }
 	 
 
@@ -124,7 +125,7 @@ public class FirstProgram {
 		 
 		 
 		 
-	    }
+	    
 
 
 		 

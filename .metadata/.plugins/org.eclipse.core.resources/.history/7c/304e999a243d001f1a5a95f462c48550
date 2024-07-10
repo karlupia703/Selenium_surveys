@@ -1,0 +1,13 @@
+package dataprovider_repository;
+
+public class DataRepo {
+
+	@DataProvider
+	
+	public Object[][] getData(){
+		Object[][] data = new Object[3][4];
+	}
+	
+	}
+
+

@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-04T12:55:41 IST" name="Default suite" finished-at="2024-06-04T12:55:41 IST" duration-ms="28">
+  <suite started-at="2024-07-03T15:47:49 IST" name="Default suite" finished-at="2024-07-03T15:47:49 IST" duration-ms="29">
     <groups>
     </groups>
-    <test started-at="2024-06-04T12:55:41 IST" name="Default test" finished-at="2024-06-04T12:55:41 IST" duration-ms="28">
+    <test started-at="2024-07-03T15:47:49 IST" name="Default test" finished-at="2024-07-03T15:47:49 IST" duration-ms="29">
       <class name="learntestNg">
-        <test-method is-config="true" signature="logintoApplication()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="logintoApplication" finished-at="2024-06-04T12:55:41 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="logintoApplication()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="logintoApplication" finished-at="2024-07-03T15:47:49 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApplication -->
-        <test-method is-config="true" signature="ConnecttoDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="ConnecttoDB" finished-at="2024-06-04T12:55:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ConnecttoDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="ConnecttoDB" finished-at="2024-07-03T15:47:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConnecttoDB -->
-        <test-method signature="login()[pri:2, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="login" description="This is logout Test" finished-at="2024-06-04T12:55:41 IST" duration-ms="3" status="PASS">
+        <test-method signature="login()[pri:2, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="login" description="This is logout Test" finished-at="2024-07-03T15:47:49 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="DisconnectfromDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="DisconnectfromDB" finished-at="2024-06-04T12:55:41 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="DisconnectfromDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="DisconnectfromDB" finished-at="2024-07-03T15:47:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DisconnectfromDB -->
-        <test-method is-config="true" signature="ConnecttoDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="ConnecttoDB" finished-at="2024-06-04T12:55:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ConnecttoDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="ConnecttoDB" finished-at="2024-07-03T15:47:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConnecttoDB -->
-        <test-method signature="logout()[pri:2, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="logout" description="This is logout Test" finished-at="2024-06-04T12:55:41 IST" duration-ms="2" status="PASS">
+        <test-method signature="logout()[pri:2, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="logout" description="This is logout Test" finished-at="2024-07-03T15:47:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="DisconnectfromDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="DisconnectfromDB" finished-at="2024-06-04T12:55:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="DisconnectfromDB()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="DisconnectfromDB" finished-at="2024-07-03T15:47:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DisconnectfromDB -->
-        <test-method is-config="true" signature="logoutfromApplication()[pri:0, instance:learntestNg@4659191b]" started-at="2024-06-04T12:55:41 IST" name="logoutfromApplication" finished-at="2024-06-04T12:55:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logoutfromApplication()[pri:0, instance:learntestNg@4659191b]" started-at="2024-07-03T15:47:49 IST" name="logoutfromApplication" finished-at="2024-07-03T15:47:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutfromApplication -->

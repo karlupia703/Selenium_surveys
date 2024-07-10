@@ -1,0 +1,133 @@
+package Testcases;
+import org.testng.annotations.Test;
+import java.util.List;
+import java.util.Random;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+@Test
+public class Survey_testcase {
+		
+	public static WebDriver driver;
+	private static Object random;
+	public static Object choice;	
+	
+	@BeforeTest
+	public void start() {
+		WebDriverManager.chromedriver().setup();
+		driver =new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost:3000/surveys");
+			 }
+	
+	
+	
+    public static void landingPage() {
+	System.out.println(driver.getCurrentUrl());
+	String currentURL = "http://localhost:3000/surveys";
+	
+	if(currentURL.equals("http://localhost:3000/surveys")){
+	System.out.println("Test Case Landing page is PASS");
+	
+	}else {
+		System.out.println("Test Case Landing page is FAIL");
+	}
+}
+
+
+ public static void CreateSurvey() throws InterruptedException {
+	
+	driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
+	
+	//click on create survey button inside
+	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[3]/button[2]")).click();
+	Thread.sleep(1000);
+	
+	int survey_id = new Random().nextInt(1000);
+    driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input")).sendKeys("Survey12" + survey_id);
+	
+	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[2]/div/div/input")).sendKeys("Sur"+ survey_id);
+	
+	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[3]/div/div/div")).click();
+	
+	driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[2]/p")).click();
+	
+	//click on modality
+//	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[4]/div/div/div")).click();
+//	driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]/p")).click();
+	
+	
+	  WebDriverWait wait = new WebDriverWait(driver, null);
+      // Locate and click the MUI dropdown button
+      WebElement dropdownButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[3]/div[3]/div/div/div/div/div[4]/div/div/div")));
+      dropdownButton.click();
+      // Wait for the options to be visible
+      List<WebElement> options = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("/html/body/div[7]/div[3]/ul")));
+      // Generate a random index to select one of the options
+      Random random = new Random();
+      int randomIndex = random.nextInt(options.size());
+      // Click the randomly selected option
+      options.get(randomIndex).click();
+	
+		
+	
+	
+	
+	
+//	WebElement modalitydropdown = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div/div/div/div[4]/div/div/div"));
+//	Select modality = new Select(modalitydropdown);
+//	
+//	int dropdownvalues = driver.findElements(By.xpath("/html/body/div[7]/div[3]/ul")).size();
+//	Random random = new Random();
+//		int index = random.nextInt(dropdownvalues);
+//	modality.selectByIndex(index);
+//	
+	
+	
+	
+	//select language
+	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[5]/div/div/div")).click();
+	driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[2]")).click();
+	
+//	WebElement languageDropdown = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div/div/div/div[5]/div/div/div"));
+//	Select language = new Select(languageDropdown);
+//	
+//	int dropdownvaluesCount = driver.findElements(By.xpath("/html/body/div[7]/div[3]/ul")).size();
+//	 Random random =new Random();
+//    int index = random.nextInt(dropdownvaluesCount);
+//    language.selectByIndex(index);
+//    
+    
+	// click on toggle icon
+    boolean isMandatory = new Random().nextBoolean();
+    
+    // printing isMandatory value
+    System.out.println(isMandatory);
+    
+    if(isMandatory) {
+	 driver.findElement(By.xpath("html/body/div[3]/div[3]/div/div[2]/div/div/div[6]/label/span[1]/span[1]/input")).click();	
+	  
+	  	 //click on create button
+	  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[3]/button[2]")).click();   
+	  Thread.sleep(1000);
+    }
+ 
+ }
+		 
+
+private static String Random() {
+	// TODO Auto-generated method stub
+	return null;
+}
+	
+}

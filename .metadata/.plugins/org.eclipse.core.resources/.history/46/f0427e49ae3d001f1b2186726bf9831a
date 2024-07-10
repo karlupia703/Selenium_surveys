@@ -1,0 +1,24 @@
+package Testcases;
+
+public class Multiple_Testcases {
+
+	@Test
+	public void launchUrl() {
+		
+	}
+	
+	@Test
+	public void enterCredentials() {
+		
+	}
+	
+	@Test
+	public void validateHomePage() {
+		
+	}
+	@Test
+	public void logout() {
+		
+	}
+}
+

@@ -1,5 +1,6 @@
 package base;
 import java.util.Random;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -17,9 +18,9 @@ public class FirstTest {
         try {
         //	goToSurvey(driver);
             login(driver);
-   //        navigateToSurveyTab(driver);
+           navigateToSurveyTab(driver);
    //       searchSurvey(driver);
-   //        createNewSurvey(driver);
+           createNewSurvey(driver);
            createNewquestion(driver);
  //           CheckUrl(driver);
            // new comment
@@ -102,6 +103,7 @@ public class FirstTest {
               
       // Search for a survey
         private static void searchSurvey(ChromeDriver driver) throws InterruptedException {
+      
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/input")).sendKeys("survey 5");
         Thread.sleep(1000);
     }
@@ -110,8 +112,8 @@ public class FirstTest {
         driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
         Thread.sleep(1000);
         
-        
-        int survey_id = new Random().nextInt(1000);
+ //  String surveyName = "Survey_" +Random().toString();
+       int survey_id = new Random().nextInt(1000);
         driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input")).sendKeys("Survey " + survey_id);
         Thread.sleep(2000);
         
@@ -156,12 +158,17 @@ public class FirstTest {
 	       Thread.sleep(1000);
 	       }
 	     
+	       
 	      // click on create button
 	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[3]/button[2]")).click();
 	      Thread.sleep(2000);
         }	      
 	      
-	       // Click on Question tab
+	       private static Object Random() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		// Click on Question tab
 	       
 	        private static void createNewquestion(ChromeDriver driver) throws InterruptedException {
 	        driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[2]/div/div[2]/span")).click();
@@ -201,6 +208,7 @@ public class FirstTest {
             jre = (JavascriptExecutor)driver;
 	        jre.executeScript("scroll (100,1000)");
 	        
+	 
 	        
     }
 }

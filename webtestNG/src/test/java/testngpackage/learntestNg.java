@@ -35,14 +35,16 @@ public class learntestNg {
 	}
 	
 	
-  @Test(priority=2,description="This is logout Test")
+  @Test(priority=1,description="This is  Test 1")
   public void login() {
 	  System.out.println("login successfully");
   }
   
   
-  @Test(priority=2,description="This is logout Test")
+  @Test(priority=2,description="This is logout Test 2")
    public void logout() {
 	   System.out.println("Logout successfully");
+	
+	   
    }
 }
