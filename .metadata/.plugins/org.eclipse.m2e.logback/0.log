@@ -6934,3 +6934,70 @@ org.eclipse.core.runtime.CoreException: Launch configuration Truckclass referenc
 2024-11-28 12:27:56,500 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-28 12:27:56,503 [Worker-47: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-11-28 12:27:56,504 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 12:31:32,711 [Worker-52: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 12:31:32,712 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 12:31:32,714 [Worker-52: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 12:31:32,715 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 13:09:41,575 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:09:41,649 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:09:41,697 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:10:52,478 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:10:52,479 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 13:10:52,481 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:10:52,482 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 13:11:01,866 [Worker-69: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:11:01,934 [Worker-69: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:11:01,994 [Worker-69: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:12:29,743 [Worker-65: Launching Survey_testcase] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:12:29,744 [Worker-65: Launching Survey_testcase] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 13:12:29,747 [Worker-65: Launching Survey_testcase] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:12:29,748 [Worker-65: Launching Survey_testcase] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 13:12:29,847 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:12:29,938 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:12:30,007 [Worker-65: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:17:23,851 [Worker-70: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:17:23,853 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 13:17:23,855 [Worker-70: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 13:17:23,856 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 13:17:23,975 [Worker-67: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:17:24,045 [Worker-67: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 13:17:24,096 [Worker-67: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:45:35,063 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:45:35,067 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 14:45:35,069 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:45:35,071 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 14:45:44,077 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:45:44,164 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:45:44,229 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:49:02,171 [Worker-86: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:49:02,172 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 14:49:02,173 [Worker-86: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:49:02,175 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 14:49:04,008 [Worker-81: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:49:04,066 [Worker-81: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:49:04,115 [Worker-81: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:50:21,056 [Worker-86: Launching Survey_testcase] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:50:21,057 [Worker-86: Launching Survey_testcase] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 14:50:21,059 [Worker-86: Launching Survey_testcase] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:50:21,059 [Worker-86: Launching Survey_testcase] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 14:50:21,147 [Worker-86: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:50:21,230 [Worker-86: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:50:21,305 [Worker-86: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:52:10,702 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:52:10,703 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 14:52:10,706 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:52:10,707 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 14:52:10,855 [Worker-87: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:52:10,925 [Worker-87: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:52:10,987 [Worker-87: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:56:33,420 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:56:33,421 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 14:56:33,422 [Worker-81: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 14:56:33,423 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-28 14:56:34,654 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:56:34,713 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 14:56:34,769 [Worker-83: Launching Survey_testcase] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/automation: com.stm:automation:0.0.1-SNAPSHOT with classifier null to /automation/target/classes
+2024-11-28 16:45:56,440 [Worker-108: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 16:45:56,442 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-28 16:45:56,443 [Worker-108: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-28 16:45:56,444 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes

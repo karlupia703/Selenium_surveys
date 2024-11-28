@@ -5,8 +5,8 @@
     <classes>
       <class name="Testcases.Survey_testcase">
         <methods>
+          <include name="AllReadyExist"/>
           <include name="start"/>
-          <include name="login"/>
         </methods>
       </class> <!-- Testcases.Survey_testcase -->
     </classes>

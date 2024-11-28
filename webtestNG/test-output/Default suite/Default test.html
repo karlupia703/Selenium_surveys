@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 28 12:12:30 IST 2024</td>
+<td>Started on:</td><td>Thu Nov 28 14:56:35 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23636 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39404 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Testcases.Survey_testcase.login()'><b>login</b><br>Test class: Testcases.Survey_testcase</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td title='Testcases.Survey_testcase.AllReadyExist()'><b>AllReadyExist</b><br>Test class: Testcases.Survey_testcase</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div tabindex=&quot;0&quot; role=&quot;combobox&quot; aria-controls=&quot;:r1a:&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; aria-labelledby=&quot;demo-simple-select-label demo-simple-select&quot; id=&quot;demo-simple-select&quot; class=&quot;MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1pwkpnr&quot;&gt;...&lt;/div&gt; is not clickable at point (1064, 495). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; class=&quot;MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);&quot;&gt;&lt;/div&gt;
   (Session info: chrome=131.0.6778.86)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [836833bac9416e41d2a52d0bb84dd3a0, sendKeysToElement {value=[Ljava.lang.CharSequence;@47f08b81, id=f.E21698E953483251EB6D65246CF11BE3.d.595D44C8AF609E930A00D6ACC3FE1352.e.8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\info\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (836833bac9416e41d2a52d0bb84dd3a0)] -&gt; xpath: //input[@type=&apos;password&apos;]]
-Session ID: 836833bac9416e41d2a52d0bb84dd3a0
+Command: [5dc62de978e8300f7c42709ae555b9f5, clickElement {id=f.9ECE5CAD43697BFD268EB94AE9475CF6.d.3CD05C19C5A3210671973C16F6755897.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\info\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5dc62de978e8300f7c42709ae555b9f5)] -&gt; xpath: /html/body/div[3]/div[3]/div/div[1]/div/div[5]/div/div/div]
+Session ID: 5dc62de978e8300f7c42709ae555b9f5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,8 +98,8 @@ Session ID: 836833bac9416e41d2a52d0bb84dd3a0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at Testcases.Survey_testcase.login(Survey_testcase.java:64)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Testcases.Survey_testcase.AllReadyExist(Survey_testcase.java:217)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,16 +128,16 @@ Session ID: 836833bac9416e41d2a52d0bb84dd3a0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1499825229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1499825229'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+</pre></div><a href='#' onClick='toggleBox("stack-trace318288344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318288344'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div tabindex=&quot;0&quot; role=&quot;combobox&quot; aria-controls=&quot;:r1a:&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; aria-labelledby=&quot;demo-simple-select-label demo-simple-select&quot; id=&quot;demo-simple-select&quot; class=&quot;MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1pwkpnr&quot;&gt;...&lt;/div&gt; is not clickable at point (1064, 495). Other element would receive the click: &lt;div aria-hidden=&quot;true&quot; class=&quot;MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);&quot;&gt;&lt;/div&gt;
   (Session info: chrome=131.0.6778.86)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [836833bac9416e41d2a52d0bb84dd3a0, sendKeysToElement {value=[Ljava.lang.CharSequence;@47f08b81, id=f.E21698E953483251EB6D65246CF11BE3.d.595D44C8AF609E930A00D6ACC3FE1352.e.8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\info\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (836833bac9416e41d2a52d0bb84dd3a0)] -&gt; xpath: //input[@type=&apos;password&apos;]]
-Session ID: 836833bac9416e41d2a52d0bb84dd3a0
+Command: [5dc62de978e8300f7c42709ae555b9f5, clickElement {id=f.9ECE5CAD43697BFD268EB94AE9475CF6.d.3CD05C19C5A3210671973C16F6755897.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\info\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53338}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53338/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5dc62de978e8300f7c42709ae555b9f5)] -&gt; xpath: /html/body/div[3]/div[3]/div/div[1]/div/div[5]/div/div/div]
+Session ID: 5dc62de978e8300f7c42709ae555b9f5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -151,8 +151,8 @@ Session ID: 836833bac9416e41d2a52d0bb84dd3a0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at Testcases.Survey_testcase.login(Survey_testcase.java:64)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Testcases.Survey_testcase.AllReadyExist(Survey_testcase.java:217)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,8 +182,26 @@ Session ID: 836833bac9416e41d2a52d0bb84dd3a0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>20</td>
-<td>Testcases.Survey_testcase@6221a451</td></tr>
+<td>10</td>
+<td>Testcases.Survey_testcase@2e3967ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testcases.Survey_testcase.login()'><b>login</b><br>Test class: Testcases.Survey_testcase</td>
+<td></td>
+<td>26</td>
+<td>Testcases.Survey_testcase@2e3967ea</td></tr>
+<tr>
+<td title='Testcases.Survey_testcase.landingPage()'><b>landingPage</b><br>Test class: Testcases.Survey_testcase</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Survey_testcase@2e3967ea</td></tr>
 </table><p>
 </body>
 </html>

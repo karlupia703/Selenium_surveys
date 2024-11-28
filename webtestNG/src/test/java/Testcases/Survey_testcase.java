@@ -31,7 +31,7 @@ public class Survey_testcase {
 	
 	
     @Test(priority = 1)
- public static void login()throws InterruptedException {
+    public static void login()throws InterruptedException {
 	  driver.get("http://localhost:3000/?callbackUrl=http%3A%2F%2F0.0.0.0%3A3000%2Fsurveys%2Fcb0d5f31-dd3d-40a9-991d-02bada856a8f");
 	  Thread.sleep(2000);
 	 
@@ -46,22 +46,20 @@ public class Survey_testcase {
 	  driver.findElement(By.xpath("/html/body/div/div/button/div/span")).click();
 	  Thread.sleep(1000);
 
-	   // Redirect to child window
+	  // Redirect to child window
 	   Set <String> windows = driver.getWindowHandles();
 	   Iterator <String> it = windows.iterator();
 	   String p = it.next();
 	   String c = it.next();
 	   driver.switchTo().window(c);
 	   Thread.sleep(3000);    
-	    
-	        
-	   //chrome pop xpath
+	    		   
        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("rajni.1156@zenmonk.tech");
 	   driver.findElement(By.xpath("//span[text()='Next']")).click();
 	   Thread.sleep(3000);
 	    
 	   //enter password
-	   driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Rajnikar@1234");
+	   driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Rajnikar2022");
 	   Thread.sleep(3000);
 	     
 	   //Click on next button
@@ -78,7 +76,7 @@ public class Survey_testcase {
  }
 	 
 	 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = true)
     public static void landingPage() {
 	System.out.println(driver.getCurrentUrl());
 	String currentURL = "http://localhost:3000/surveys";
@@ -96,10 +94,10 @@ public class Survey_testcase {
      @Test(priority = 3, enabled = false)
      public static void CreateSurvey() throws InterruptedException {
 	
-	driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div/div[1]/div[1]/button")).click();
+	driver.findElement(By.cssSelector("[data-test-id=\"btn-open-create-survey-dialog\"]")).click();
 	
 	//click on create survey button inside
-	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
+	driver.findElement(By.cssSelector("[data-test-id=\"btn-create-survey\"]")).click();
 	Thread.sleep(1000);
 	
 	int survey_id = new Random().nextInt(1000);
@@ -185,7 +183,7 @@ public class Survey_testcase {
   
 
      // create again same survey
-     @Test(priority = 4, enabled = false)
+     @Test(priority = 4, enabled = true)
      public static void AllReadyExist() throws InterruptedException {
     	
     // shift to survey navigation  	 
@@ -207,31 +205,34 @@ public class Survey_testcase {
      Thread.sleep(1000);
      
      //select type of survey
-     driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[3]/div/div/div")).click();
- 	 driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[2]/p")).click(); 
+     driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[3]/div/div/div")).click();
+ 	 driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click(); 
  	Thread.sleep(1000);
  	
  	 //select the modified
-     driver.findElement(By.xpath("//div[4]//div[1]//div[1]//div[1]")).click();
- 	 driver.findElement(By.xpath("//p[normalize-space()=\"In Person\"]")).click();
+     driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[4]/div/div/div")).click();
+ 	 driver.findElement(By.cssSelector("[role='listbox']")).click();
+ 	 
+ 	//click on body
+     driver.findElement(By.tagName("body")).click();
       
     //select language	
- 	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[5]/div/div/div")).click();
- 	driver.findElement(By.xpath("//p[normalize-space()=\"English\"]")).click();
+ 	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[5]/div/div/div")).click();
+ 	driver.findElement(By.cssSelector("[role='listbox']")).click();
  	Thread.sleep(1000);
  	
  	//select toggle icon
     //	driver.findElement(By.xpath("html/body/div[3]/div[3]/div/div[2]/div/div/div[6]/label/span[1]/span[1]/input")).click();
  	
  	//click on create button
-	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[3]/button[2]")).click();   
+	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();   
 	Thread.sleep(1000);
     }
     
            
     
     //Check filter
-    @Test(priority = 5,enabled = true)
+    @Test(priority = 5,enabled = false)
     public static void Searchfilter() throws InterruptedException {
     
     driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/input")).sendKeys("Survey12263");
