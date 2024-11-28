@@ -91,7 +91,7 @@ public class Survey_testcase {
 	
 
 	//Create survey
-     @Test(priority = 3, enabled = false)
+     @Test(priority = 3, enabled = true)
      public static void CreateSurvey() throws InterruptedException {
 	
 	driver.findElement(By.cssSelector("[data-test-id=\"btn-open-create-survey-dialog\"]")).click();
@@ -112,10 +112,8 @@ public class Survey_testcase {
     Random random = new Random();
     int randomIndex = random.nextInt(options.size());
     options.get(randomIndex).click();
-		
-		
-	  //click on modality
-      // Locate and click the MUI dropdown button
+				
+	  //click on modality    
       WebElement dropdownButton1 = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[4]/div/div/div"));
       dropdownButton1.click();
       // Wait for the options to be visible
@@ -139,8 +137,7 @@ public class Survey_testcase {
       Random random2 = new Random();
       int randomIndex2 = random2.nextInt(options2.size());
       options2.get(randomIndex2).click();
-	
-	 
+		 
 	  //click on create button
 	  driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();   
 	  Thread.sleep(1000); 
@@ -164,24 +161,12 @@ public class Survey_testcase {
     if(isMandatory1) {
 	 driver.findElement(By.cssSelector("[data-test-id=\"input-create-survey-version-mandatory\"]")).click();		
     }
-
-    
+   
       //click on accept button 
       driver.findElement(By.cssSelector("[data-test-id=\"btn-create-survey-version\"]")).click();
     
     }
       
-//	  //Question Tab
-//	 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/a[2]/div[1]/div[2]/span[1]")).click();
-//	 Thread.sleep(1000); 
-//	 
-//	 //again click on Surveys Tab
-//	 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/a[1]/div[1]/div[2]/span[1]")).click();
-//	 Thread.sleep(1000);
-	 
-    
-  
-
      // create again same survey
      @Test(priority = 4, enabled = true)
      public static void AllReadyExist() throws InterruptedException {
@@ -255,6 +240,16 @@ public class Survey_testcase {
     
     }
    
+//	  //Question Tab
+//	 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/a[2]/div[1]/div[2]/span[1]")).click();
+//	 Thread.sleep(1000); 
+//	 
+//	 //again click on Surveys Tab
+//	 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/nav[1]/a[1]/div[1]/div[2]/span[1]")).click();
+//	 Thread.sleep(1000);
+    
+    
+    
 
 private static String Random() {
 	// TODO Auto-generated method stub
