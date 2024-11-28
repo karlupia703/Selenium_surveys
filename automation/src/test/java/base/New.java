@@ -42,7 +42,7 @@ public class New {
 		Thread.sleep(1000);
 		
 		//click on email field
-	    driver.findElement(By.xpath("/html/body/div/div/button/div/h6")).click();
+	    driver.findElement(By.xpath("/html/body/div/div/button")).click();
 	    Thread.sleep(1000);
 
 	    // Redirect to child window
@@ -76,71 +76,77 @@ public class New {
 	     driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[1]/div/div[2]/span")).click();
 	     Thread.sleep(2000);
 	     
-	     // click on Question tab
-	      driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[2]/div/div[2]/span")).click();
-		  Thread.sleep(2000);
-	     
-		//click on survey tab
-		   driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[1]/div/div[2]/span")).click();
-		   Thread.sleep(2000);
+//	     // click on Question tab
+//	      driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[2]/div/div[2]/span")).click();
+//		  Thread.sleep(2000);
+//	     
+//		//click on survey tab
+	//   driver.findElement(By.xpath("/html/body/div[1]/div/div/div[1]/div/nav/a[1]/div/div[2]/span")).click();
+//		   Thread.sleep(4000);
 		  
 		   
 		   
 // Try to search survey
-	       
-	       // click on survey search box
-	       driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/input")).sendKeys("survey 5");
-	       Thread.sleep(1000);
+//	       
+//	       // click on survey search box
+//	       driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/input")).sendKeys("survey 5");
+//	       Thread.sleep(1000);
 	       
 	        // click on cross icon
 	   //   driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/div[2]/button")).click ();
 	      
 	
-	      Actions act = new Actions(driver);
-	      WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/div[2]/button")); 
-	      act.doubleClick(ele).perform();
-	       
-	      Thread.sleep(1000);
-		   
+//	      Actions act = new Actions(driver);
+//	      WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[3]/div[1]/div/div[1]/div[2]/button")); 
+//	      act.doubleClick(ele).perform();
+//	       
+//	      Thread.sleep(1000);
+//		   
 		         
 	     
 	 
 	     //click on Create survey button
-	     driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
+	     driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div/div[1]/div[1]/button")).click();
 	     Thread.sleep(1000);
+	     
+	     
+	 //    driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/div/div/input")).sendKeys("Survey1 ");
 	     
 	     // enter survey name
 	     int survey_id = (int)Math.floor(1000*Math.random());
-		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input")).sendKeys("Survey " + survey_id);
-         Thread.sleep(2000);
-		 
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/div/div/input")).sendKeys("Survey " + survey_id);
+//         Thread.sleep(2000);
+//		 
 		 //enter  abbreviation
-		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[2]/div/div/input")).sendKeys("S" + survey_id);
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div/div/input")).sendKeys("S" + survey_id);
 		 Thread.sleep(1000);
 		 
 		 //click on type of survey
-		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[3]/div/div/div")).click();
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[3]/div/div/div")).click();
 	     Thread.sleep(1000);
 		 
 		 // select type of survey
-		   driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]/p")).click();
+		   driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
 		   Thread.sleep(1000);
 		 
 		 // Click Modality
-		   driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[4]/div/div/div")).click();
+		   driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[4]/div/div/div")).click();
 		   Thread.sleep(1000);
 		 
 		 
 		 // select Modality -  in person
-	       driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]/p")).click();
+	       driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
 	       Thread.sleep(1000);
 	             
+	    // select Modality -virtual
+	       driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[2]")).click();
+	       Thread.sleep(1000);
 	    // Click Language
-	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[5]/div/div/div")).click();
+	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[5]/div/div/div")).click();
 	       Thread.sleep(1000);
 		 
 	      // select Language
-	      driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
+	      driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[3]")).click();
 	       Thread.sleep(1000);
 	       
 	       

@@ -59,7 +59,7 @@ public class FirstTest {
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/div[2]/div[3]/ul/li[1]/div/span")).click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("/html/body/div/div/button/div/h6")).click();
+        driver.findElement(By.xpath("/html/body/div/div/button")).click(); ///html/body/div/div/button/div/span
         Thread.sleep(1000);
         // Redirect to child window
         String parentHandle = driver.getWindowHandle();
@@ -69,7 +69,7 @@ public class FirstTest {
                 break;
             }
     }
-        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("rajni.1156@zenmonk.tech");
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("rajni.1156@zenmonk.tech"); ///html/body/div[1]/div[1]/div[2]/c-wiz/div/div[2]/div/div/div[1]/form/span/section/div/div/div[1]/div
         driver.findElement(By.xpath("//span[text()='Next']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Rajnikar@1234");
@@ -109,60 +109,67 @@ public class FirstTest {
     }
        // Create a new survey Create button
         private static void createNewSurvey(ChromeDriver driver) throws InterruptedException {
-        driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div[1]/button")).click();
+        driver.findElement(By.xpath("/html/body/div[1]/div/div/div[2]/div/div[1]/div[1]/button")).click();
         Thread.sleep(1000);
         
- //  String surveyName = "Survey_" +Random().toString();
+       //  String surveyName = "Survey_" +Random().toString();
        int survey_id = new Random().nextInt(1000);
-        driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input")).sendKeys("Survey " + survey_id);
+        driver.findElement(By.xpath("//*[@id=\":r1p:\"]")).sendKeys("Survey " + survey_id);
         Thread.sleep(2000);
         
         
         //Enter  abbreviation
-		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[2]/div/div/input")).sendKeys("S" + survey_id);
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div/div/input")).sendKeys("S" + survey_id);
 		 Thread.sleep(1000);
 		 
 		 //Click on type of survey
-		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[3]/div/div/div")).click();
+		 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[3]/div/div/div")).click();
 	     Thread.sleep(1000);
 		 
 		 //Select type of survey
-		   driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]/p")).click();
+		   driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[2]/span[1]")).click();
 		   Thread.sleep(1000);
 		 
 		 //Click Modality
-		   driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[4]/div/div/div")).click();
+		   driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[4]/div/div/div")).click();
 		   Thread.sleep(1000);
 		 
 		 //Select Modality -  in person
-	       driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]/p")).click();
+	       driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
 	       Thread.sleep(1000);
-	             
+
+	       //click on body
+	       driver.findElement(By.tagName("body")).click();
+	       
 	     // Click Language
-	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[5]/div/div/div")).click();
+	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[5]/div/div/div")).click();
 	       Thread.sleep(1000);
 		 
 	      // select Language
 	      driver.findElement(By.xpath("/html/body/div[4]/div[3]/ul/li[1]")).click();
 	       Thread.sleep(1000);
 	       
-	       
-	       // click on toggle icon
-	       boolean isMandatory = new Random().nextBoolean();
-	       
-	       // printing isMandatory value
-	       System.out.println(isMandatory);
-	       
-	       if(isMandatory) {
-	       driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[6]/label/span[1]/span[1]/input")).click();	
-	       Thread.sleep(1000);
-	       }
+//	       
+//	       // click on toggle icon
+//	       boolean isMandatory = new Random().nextBoolean();
+//	       
+//	       // printing isMandatory value
+//	       System.out.println(isMandatory);
+//	       
+//	       if(isMandatory) {
+//	       driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/div/div/div[6]/label/span[1]/span[1]/input")).click();	
+//	       Thread.sleep(1000);
+//	       }
 	     
 	       
 	      // click on create button
-	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[3]/button[2]")).click();
+	      driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
 	      Thread.sleep(2000);
-        }	      
+        }	  
+        
+        
+       // create version
+        
 	      
 	       private static Object Random() {
 		// TODO Auto-generated method stub
