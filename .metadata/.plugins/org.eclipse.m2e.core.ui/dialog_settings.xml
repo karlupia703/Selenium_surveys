@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\info\eclipse-workspace\Survey\src"/>
 			<item value="C:\Users\info\eclipse-workspace\automation"/>
 			<item value="C:\Users\info\eclipse-workspace\newproject"/>
 			<item value="C:\Users\info\eclipse-workspace\newproject\src"/>
@@ -47,16 +48,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.zenmonk"/>
-			<item value="com.stm"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="webtestNG"/>
-			<item value="automation"/>
-			<item value="testautomation"/>
-			<item value="TestAutomation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

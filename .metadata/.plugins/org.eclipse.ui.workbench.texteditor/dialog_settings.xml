@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="r17"/>
+		<item key="selection" value="Icon"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="r17"/>
-			<item value="id: :r17:"/>
-			<item value="/html/body/div/div/button/div/h6&quot;"/>
-			<item value="/html/body/div[1]/div/div/div[2]/div[1]/button]"/>
-			<item value="allreadyex"/>
-			<item value="/html[1]/body[1]/div[3]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"/>
-			<item value="&quot;/html/body/div[3]/div[3]/div/div[2]/div/div/div[1]/div/div/input&quot;"/>
-			<item value="stale"/>
-			<item value="survey_id"/>
-			<item value="returntoHomepage"/>
-			<item value="returnonHomepage"/>
-			<item value="return"/>
-			<item value="executeScript"/>
-			<item value="/html/body/div[2]/div/ul/li[1]/ul/li[1]"/>
-			<item value="/html/body/div/div[1]/div/div[2]/div/section/div[2]/form/div[7]/div/div/div"/>
+			<item value="icon"/>
+			<item value="view"/>
+			<item value="uuid"/>
+			<item value="/html/body/div[1]/div/div[2]/div/div/div[1]/button"/>
+			<item value="clickOnEditButton"/>
+			<item value="generateRandomEmail"/>
+			<item value="/html/body/div[6]/div[3]/div/div[2]/button[2]"/>
+			<item value="modal-cancelaction-responsibleform-create"/>
+			<item value="&apos;data-test-id=&apos;button-responsibleform-create&apos;"/>
+			<item value="data-test-id=&apos;button-responsibleform-create"/>
+			<item value="data-test-id=&apos;custombtn-modal-responsiblitiesform-edit-submit"/>
+			<item value="actions"/>
+			<item value="keys"/>
+			<item value="action"/>
+			<item value="data-test-id=&apos;customtextfield-input-responsiblename-responsibleform-create"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -33,5 +33,9 @@
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="724"/>
+		<item key="DIALOG_Y_ORIGIN" value="392"/>
 	</section>
 </section>

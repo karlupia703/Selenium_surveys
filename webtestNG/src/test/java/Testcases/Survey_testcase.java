@@ -100,6 +100,7 @@ public class Survey_testcase {
 	driver.findElement(By.cssSelector("[data-test-id=\"btn-create-survey\"]")).click();
 	Thread.sleep(1000);
 	
+	
 	int survey_id = new Random().nextInt(1000);
     driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[1]/div/div/input")).sendKeys("Survey12" + survey_id);
 	driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div[2]/div/div/input")).sendKeys("Sur"+ survey_id);
