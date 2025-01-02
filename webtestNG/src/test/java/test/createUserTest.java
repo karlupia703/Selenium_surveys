@@ -164,6 +164,27 @@ public class createUserTest {
         userPage5.clearFilters();
         Thread.sleep(1000);
     }
+    
+    @Test(priority = 6, enabled = true)
+    public void searchUser1() throws InterruptedException {
+        // Initialize the page object
+        createUserPages userPage = new createUserPages(driver);
+
+        // Locate the first row in the table
+        WebElement firstRow = userPage.getFirstRow();
+
+        // Extract UUID from the first row
+        String uuid = userPage.extractUuidFromRow(firstRow);
+
+        // Get the user name using the extracted UUID
+        String userName = userPage.getUserName(firstRow, uuid);
+        System.out.println("Extracted userName: " + userName);
+        userPage.searchForUserName(userName);
+        userPage.clearSearch();
+    }
+    
+    
+    
 }
     
     

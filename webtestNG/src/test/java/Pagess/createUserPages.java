@@ -4,10 +4,10 @@ package Pagess;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -73,6 +73,11 @@ public class createUserPages {
     private By statusFilterDropdown = By.cssSelector("[data-test-id='filterchip-arrowdown-icon-filter-status-page-reinstatement']");
     private By inactiveOption = By.cssSelector("[data-test-id=\"filterchip-menu-item-false-filter-status-page-reinstatement\"]");
    
+ // Locators for Search
+    private By tableBody = By.cssSelector("[data-test-id='tablebody-desktoptable-reinstatement-responsibles-table-list-page-reinstatement']");
+    private By searchInput = By.xpath("/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/input");
+    private By clearSearchIcon = By.cssSelector("[data-test-id=\"icon-clear-searchbar-page-reinstatement\"]");
+    
     
     public void clickOnCreateButton() {
         driver.findElement(createbtn).click();
@@ -139,15 +144,14 @@ public class createUserPages {
 //    }
     
     // Edit Method 
-    
-    public void findFirstRow() {
+        public void findFirstRow() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement findFirstRow1 = wait.until(ExpectedConditions.presenceOfElementLocated((By) findFirstRow));
         wait.until(ExpectedConditions.elementToBeClickable(findFirstRow)).click();
     }
     
     
-    public void clickOnLastNameField(String last) {
+      public void clickOnLastNameField(String last) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement lastNameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(lastNameField));
         lastNameInput.click();
@@ -170,16 +174,14 @@ public class createUserPages {
         confirmDialog.click();
     }
      
-    // View Method of User
-   
+    // View Method of User   
     public void clickOnViewIcon1() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement findFirstRow1 = wait.until(ExpectedConditions.presenceOfElementLocated((By) findFirstRowViewIcon));
         wait.until(ExpectedConditions.elementToBeClickable(findFirstRowViewIcon)).click();
     }
 
-    
-    public void clickOnViewCrossIcon() {
+        public void clickOnViewCrossIcon() {
     	driver.findElement(crossIconView).click();
     }
 
@@ -233,7 +235,56 @@ public class createUserPages {
 	    public void selectInactiveOption() {
 	        driver.findElement(inactiveOption).click();
 	    }
+	    
+	  //Methods of Search
+	    public WebElement getFirstRow() {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement tableBodyElement = wait.until(ExpectedConditions.presenceOfElementLocated(tableBody));
+	        return tableBodyElement.findElement(By.cssSelector(":first-child"));
+	    }
+
+	    public String extractUuidFromRow(WebElement firstRow) {
+	        String dataTestId = firstRow.getAttribute("data-test-id");
+	        if (dataTestId == null) {
+	            throw new NoSuchElementException("No data-test-id attribute found for the first row.");
+	        }
+
+	        Pattern uuidPattern = Pattern.compile("[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}");
+	        Matcher matcher = uuidPattern.matcher(dataTestId);
+
+	        if (matcher.find()) {
+	            return matcher.group();
+	        } else {
+	            throw new IllegalArgumentException("No valid UUID found in data-test-id: " + dataTestId);
+	        }
+	    }
+
+	    public String getUserName(WebElement firstRow, String uuid) {
+	        WebElement userNameElement = firstRow.findElement(By.cssSelector(
+	            "[data-test-id='tablebodycell-" + uuid + "-responsiblename-desktoptable-reinstatement-responsibles-table-list-page-reinstatement']"));
+	        String userName = userNameElement.getText().trim();
+
+	        if (userName.isEmpty()) {
+	            throw new NoSuchElementException("User name not found in the first row.");
+	        }
+
+	        return userName;
+	    }
+
+	    public void searchForUserName(String userName) throws InterruptedException {
+	        WebElement searchBar = driver.findElement(searchInput);
+	        searchBar.sendKeys(userName);
+	        Thread.sleep(2000); // Consider replacing with an explicit wait
+	    }
+
+	    public void clearSearch() throws InterruptedException {
+	        WebElement clearSearch = driver.findElement(clearSearchIcon);
+	        clearSearch.click();
+	        Thread.sleep(2000); // Consider replacing with an explicit wait
+	    }
 	}
+	    
+	
 		
 		
 		

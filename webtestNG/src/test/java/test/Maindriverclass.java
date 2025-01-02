@@ -30,6 +30,8 @@ public class Maindriverclass {
             Thread.sleep(3000);
             createUserTest.testcaseOfFilter();
             Thread.sleep(3000);
+            createUserTest.searchUser1();
+            Thread.sleep(3000);
             
         } finally {
             // Close the WebDriver
