@@ -3,7 +3,6 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import java.util.Set;
 
 public class ReinstatementLoginTest {

@@ -32,6 +32,10 @@ public class Maindriverclass {
             Thread.sleep(3000);
             createUserTest.searchUser1();
             Thread.sleep(3000);
+            createUserTest.pagination();
+            Thread.sleep(3000);
+            createUserTest.testAlreadyExistUser();
+            Thread.sleep(3000);
             
         } finally {
             // Close the WebDriver
@@ -40,5 +44,3 @@ public class Maindriverclass {
         }
     }
 }
-
-//createUserPages userPages = new createUserPages(driver);

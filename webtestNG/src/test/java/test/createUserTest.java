@@ -183,7 +183,72 @@ public class createUserTest {
         userPage.clearSearch();
     }
     
+    @Test(priority = 7, enabled = true)
+    public void pagination() throws InterruptedException {
+        // Initialize the page object
+        createUserPages userPage = new createUserPages(driver);
+
+        // Check if the right pagination arrow is available and enabled
+        if (userPage.isRightArrowAvailable()) {
+            if (userPage.isRightArrowEnabled()) {
+                System.out.println("Right pagination arrow is enabled.");
+                userPage.clickRightArrow(); // Click the right arrow
+                Thread.sleep(2000); // Wait after clicking
+            } else {
+                System.out.println("Right pagination arrow is disabled.");
+            }
+        } else {
+            System.out.println("Right pagination arrow is not available.");
+        }
+
+        // Check if the left pagination arrow is available and enabled
+        if (userPage.isLeftArrowAvailable()) {
+            if (userPage.isLeftArrowEnabled()) {
+                System.out.println("Left pagination arrow is enabled.");
+                userPage.clickLeftArrow(); // Click the left arrow
+                Thread.sleep(2000); // Wait after clicking
+            } else {
+                System.out.println("Left pagination arrow is disabled.");
+            }
+        } else {
+            System.out.println("Left pagination arrow is not available.");
+        }
+    }
     
+    @Test(priority = 8, enabled = true)
+    public void testAlreadyExistUser() {
+        createUserPages userPage5 = new createUserPages(driver);
+
+        // Generate unique user data
+        String firstName = faker.name().firstName();
+        String lastName = faker.name().lastName();
+        String email = faker.internet().emailAddress(firstName + lastName);
+
+        // Create the first user
+        userPage5.clickCreateButton();
+        userPage5.fillUserDetails(firstName, lastName, email);
+        userPage5.selectheadquarter1();
+        userPage5.toggleStatus();
+        userPage5.clickSubmitButton();
+        validateNotification(userPage5, "Reinstatement Responsible created successfully");
+
+        // Attempt to create the same user again
+        userPage5.clickCreateButton();
+        userPage5.fillUserDetails(firstName, lastName, email);
+        userPage5.selectheadquarter1();
+        userPage5.toggleStatus();
+        userPage5.clickSubmitButton();
+        validateNotification(userPage5, "Email already exists");
+
+        // Handle duplicate user dialog
+        userPage5.clickCancelButton();
+        userPage5.clickYesButton();
+    }
+
+   public void validateNotification(createUserPages userPage, String expectedMessage) {
+       String notificationText = userPage.getNotificationMessage2();
+       Assert.assertTrue(notificationText.contains(expectedMessage), "Notification does not match expected message: " + notificationText);
+   }
     
 }
     
