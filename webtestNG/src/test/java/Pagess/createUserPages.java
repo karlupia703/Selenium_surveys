@@ -47,8 +47,7 @@ public class createUserPages {
      //  By notification = By.xpath("/div/div/div/div/div/div[1]/div");
     //   By notification = By.cssSelector("#notistack-snackbar > .MuiBox-root");
     
-   
-    // Locators for edit user field
+   // Locators for edit user field
     By findFirstRow = By.cssSelector("[data-test-id*='-editicon-desktoptable-']");
     By lastNameField = By.xpath("/html/body/div[5]/div[3]/div[2]/div/form/div[2]/div/input");
     By editbutton = By.xpath("/html/body/div[5]/div[3]/div[3]/button[2]");
@@ -56,11 +55,25 @@ public class createUserPages {
     By notification = By.cssSelector("[#notistack-snackbar > .MuiBox-root]");
     
     // Locators for view user field  
-    
-      By findFirstRowViewIcon = By.cssSelector("[data-test-id*='-viewicon-desktoptable-']");
-      By crossIconView = By.cssSelector("[data-test-id=\"customdialog-canclebtn-view-viewresponsible-reinstatement-responsibles-table-list-page-reinstatement\"]");
+    By findFirstRowViewIcon = By.cssSelector("[data-test-id*='-viewicon-desktoptable-']");
+    By crossIconView = By.cssSelector("[data-test-id=\"customdialog-canclebtn-view-viewresponsible-reinstatement-responsibles-table-list-page-reinstatement\"]");
  //     By crossIconView = By.xpath("/html/body/div[5]/div[3]/div/h2/div/button");
-      
+    
+    // Locators for delete user
+    private By deleteButton = By.cssSelector("[data-test-id*='-deleteicon-desktoptable-']");
+    private By confirmDeleteButton = By.cssSelector("[data-test-id='custombtn-dialogBox-submit-alertbox-delete-reinstatement-responsibles-table-list-page-reinstatement']");
+    private By notificationMessage = By.cssSelector("#notistack-snackbar > .MuiBox-root");
+
+    //Locators for Filter
+    private By filterDropdown = By.cssSelector("[data-test-id='icon-arrowdown-autocompletefilter-destop-filter-headquarter-page-reinstatement']");
+    private By optionAO = By.cssSelector("[data-test-id='list-item-AO-autocompletefilter-destop-filter-headquarter-page-reinstatement']");
+    private By optionCL = By.cssSelector("[data-test-id='list-item-CL-autocompletefilter-destop-filter-headquarter-page-reinstatement']");
+    private By closeDropdown = By.cssSelector("body");
+    private By clearFilters = By.cssSelector("[data-test-id='clear-btn-header-page-reinstatement']");
+    private By statusFilterDropdown = By.cssSelector("[data-test-id='filterchip-arrowdown-icon-filter-status-page-reinstatement']");
+    private By inactiveOption = By.cssSelector("[data-test-id=\"filterchip-menu-item-false-filter-status-page-reinstatement\"]");
+   
+    
     public void clickOnCreateButton() {
         driver.findElement(createbtn).click();
     }
@@ -173,9 +186,61 @@ public class createUserPages {
     
 	public void waitForTableToLoad() {
 		// TODO Auto-generated method stub
+	}		
 		
-		
+	    // Methods of Delete User
+	    public void clickDeleteButton() {
+	        WebElement firstRowDeleteButton = driver.findElement(deleteButton);
+	        firstRowDeleteButton.click();
+	    }
+
+	    public void confirmDeletion() {
+	        driver.findElement(confirmDeleteButton).click();
+	    }
+
+	    public String getNotificationMessage() {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement notification = wait.until(ExpectedConditions.visibilityOfElementLocated(notificationMessage));
+	        return notification.getText().trim();
+	    }
+	
+	    
+	   //Methods of filters
+	    public void openFilterDropdown() {
+	        driver.findElement(filterDropdown).click();
+	    }
+
+	    public void selectOptionAO() {
+	        driver.findElement(optionAO).click();
+	    }
+
+	    public void selectOptionCL() {
+	        driver.findElement(optionCL).click();
+	    }
+
+	    public void closeFilterDropdown() {
+	        driver.findElement(closeDropdown).click();
+	    }
+
+	    public void clearFilters() {
+	        driver.findElement(clearFilters).click();
+	    }
+
+	    public void openStatusFilterDropdown() {
+	        driver.findElement(statusFilterDropdown).click();
+	    }
+
+	    public void selectInactiveOption() {
+	        driver.findElement(inactiveOption).click();
+	    }
 	}
+		
+		
+		
+		
+		
+		
+	
     
-}
+
 

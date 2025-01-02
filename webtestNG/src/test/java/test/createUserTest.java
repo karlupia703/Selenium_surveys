@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.File;
+import Pagess.createUserPages;
 
 import java.time.Duration;
 import java.util.List;
@@ -116,9 +117,61 @@ public class createUserTest {
         Thread.sleep(2000);
     }
 
-            
+        
+    @Test(priority = 4, enabled = true)
+    public void deleteUser() {
+        // Initialize the page object
+    	createUserPages userPage3 = new createUserPages(driver);
 
-}  
+        // Perform delete action
+        userPage3.clickDeleteButton();
+        userPage3.confirmDeletion();
+
+        // Get the notification message and verify it
+        String notificationText = userPage3.getNotificationMessage();
+        System.out.println("Notification Text: " + notificationText);
+        Assert.assertTrue(notificationText.contains("was successfully deleted"), "Delete success message not displayed!");
+    }
+    
+    @Test(priority = 5, enabled = true)
+    public void testcaseOfFilter() throws InterruptedException {
+        // Initialize the page object
+    	createUserPages userPage5 = new createUserPages(driver);
+
+        // Open the filter dropdown and select multiple options
+        userPage5.openFilterDropdown();
+        Thread.sleep(1000);
+        userPage5.selectOptionAO();
+        Thread.sleep(1000);
+        userPage5.selectOptionCL();
+        Thread.sleep(1000);
+
+        // Close the filter dropdown
+        userPage5.closeFilterDropdown();
+        Thread.sleep(1000);
+
+        // Clear filters
+        userPage5.clearFilters();
+        Thread.sleep(1000);
+
+        // Open the Status filter dropdown and select "Inactive" option
+        userPage5.openStatusFilterDropdown();
+        Thread.sleep(1000);
+        userPage5.selectInactiveOption();
+        Thread.sleep(1000);
+
+        // Clear filters again
+        userPage5.clearFilters();
+        Thread.sleep(1000);
+    }
+}
+    
+    
+
+    
+    
+
+
 
 
 

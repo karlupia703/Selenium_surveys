@@ -26,7 +26,10 @@ public class Maindriverclass {
             Thread.sleep(2000);
             createUserTest.viewUser();
             Thread.sleep(3000);
-            
+            createUserTest.deleteUser();
+            Thread.sleep(3000);
+            createUserTest.testcaseOfFilter();
+            Thread.sleep(3000);
             
         } finally {
             // Close the WebDriver
